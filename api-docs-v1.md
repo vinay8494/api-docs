@@ -105,7 +105,7 @@ enum DurationUnit {
 * **Data Params**  
 ```
   {
-    "articles": {
+    "article": {
       "title": string
       "description": string
   }
@@ -113,7 +113,7 @@ enum DurationUnit {
 * **Success Response:** 
 * **Code:** 200  
   **Content:**  `{ 
-    "images": [comma separated string]
+    "images": [comma separated string of image urls]
   }`  
   OR 
 * **Code:** 200  
