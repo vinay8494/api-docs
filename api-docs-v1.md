@@ -23,7 +23,7 @@
 * **Error Response:**  
 
   * **Code:** 401  
-  **Content:** `{ error : error : "You are unauthorized to make this request." }`
+  **Content:** `{ error : "You are unauthorized to make this request." }`
 
 **POST /rest/api/v0/gdp/stories/publish/**
 ----
