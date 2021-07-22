@@ -93,7 +93,7 @@ enum DurationUnit {
 ````  
   
 
-**POST /rest/api/v0/gdp/stories/image_selection/**
+**GET /rest/api/v0/gdp/stories/image_selection/**
 ----
   Selects and Returns Urls of Images based on Input Given by the Publisher.
 * **URL Params**  
