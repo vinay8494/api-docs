@@ -9,12 +9,12 @@
 * **Data Params**  
 ```
   { 
-    "url": "", 
-    "title": "", 
-    "categories": ["daily_digest", "entertainment"], 
-    "source": "NDTV", 
-    "language": "en/hi", 
-    "summary": "", 
+    "url": string, 
+    "title": string, 
+    "categories": [comma separated string], 
+    "source": string, 
+    "language": string, 
+    "summary": string, 
   } 
 ```
 * **Success Response:**  
@@ -46,7 +46,7 @@
               "region": string
               "glanceTime": {
                       "duration": {
-                          "unit": "DAYS",
+                          "unit": "DurationUnit",
                           "length": 1
                       },
                       "startTime": epochTime
@@ -81,6 +81,16 @@
   * **Code:** 401  
   **Content:** `{ error : error : "You are unauthorized to make this request." }`
   
+  
+Payload Reference :
+```` 
+enum DurationUnit {
+    HOURS
+    DAYS
+    MINUTES
+    SECONDS
+}  
+````  
   
 
 **POST /rest/api/v0/gdp/stories/image_selection/**
