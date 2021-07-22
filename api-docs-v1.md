@@ -63,7 +63,7 @@
         "isCoverCard": boolean
         "summary": string, 
         "sequenceNumber": integer 
-        "url": string 
+        "videoUrl": string 
         "title": string 
         "cta" : { 
             "text": string, 
@@ -145,7 +145,7 @@ enum DurationUnit {
         "isCoverCard": boolean 
         "summary": string, 
         "sequenceNumber": integer 
-        "url": string 
+        "videoUrl": string 
         "title": string 
         "cta" : { 
             "text": string, 
