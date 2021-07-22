@@ -59,7 +59,6 @@
     "cards": [ 
       { 
         "pageId" : string 
-        "imageUrl": string 
         "imageAttribution": string 
         "isCoverCard": boolean
         "summary": string, 
@@ -142,7 +141,6 @@ enum DurationUnit {
     "cards": [ 
       { 
         "pageId" : string 
-        "imageUrl": string 
         "imageAttribution": string 
         "isCoverCard": boolean 
         "summary": string, 
