@@ -79,7 +79,7 @@
 * **Error Response:**  
 
   * **Code:** 401  
-  **Content:** `{ error : error : "You are unauthorized to make this request." }`
+  **Content:** `{ error : "You are unauthorized to make this request." }`
   
   
 Payload Reference :
@@ -125,10 +125,10 @@ enum DurationUnit {
   **Content:** `{ error : "No Suggested Images Found" }`  
   OR  
   * **Code:** 401  
-  **Content:** `{ error : error : "You are unauthorized to make this request." }`
+  **Content:** `{ error : "You are unauthorized to make this request." }`
   OR  
   * **Code:** 500  
-  **Content:** `{ error : error : "Internal Server Error." }`
+  **Content:** `{ error : "Internal Server Error." }`
   
 **POST /rest/api/v0/gdp/stories/cards_story/**
 ----
@@ -166,7 +166,7 @@ enum DurationUnit {
 * **Error Response:**  
 
   * **Code:** 401  
-  **Content:** `{ error : error : "You are unauthorized to make this request." }`
+  **Content:** `{ error : "You are unauthorized to make this request." }`
   
   
   
@@ -208,7 +208,7 @@ enum DurationUnit {
 * **Error Response:**  
  
   * **Code:** 401  
-  **Content:** `{ error : error : "You are unauthorized to make this request." }`
+  **Content:** `{ error : "You are unauthorized to make this request." }`
   
   
 
@@ -237,4 +237,4 @@ enum DurationUnit {
   **Content:** `{ error : "No Published Story Exist" }`  
   OR  
   * **Code:** 401  
-  **Content:** `{ error : error : "You are unauthorized to make this request." }`
+  **Content:** `{ error : "You are unauthorized to make this request." }`
