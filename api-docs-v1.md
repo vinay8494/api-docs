@@ -164,7 +164,7 @@ enum DurationUnit {
   **Content:** `{ error : "You are unauthorized to make this request." }`
   
   
-  
+ 
  GET /rest/api/v0/gdp/stories/published/?storyId=:storyId&partner=:partnerId&region=:regionId&status=:status
 ----
   Gets All the Published Stories.
