@@ -56,14 +56,14 @@
      ]
     "publisherName":string,    
     "publisherId": string      
-    "stories": [ 
+    "pages": [ 
       { 
         "pageId" : string 
         "imageAttribution": string 
         "isCoverCard": boolean
         "summary": string, 
         "sequenceNumber": integer 
-        "videoUrl": string 
+        "url": string 
         "title": string 
         "cta" : { 
             "text": string, 
@@ -138,14 +138,14 @@ enum DurationUnit {
 ```
   {
     "storyId": string,
-    "stories": [ 
+    "pages": [ 
       { 
         "pageId" : string 
         "imageAttribution": string 
         "isCoverCard": boolean 
         "summary": string, 
         "sequenceNumber": integer 
-        "videoUrl": string 
+        "url": string 
         "title": string 
         "cta" : { 
             "text": string, 
