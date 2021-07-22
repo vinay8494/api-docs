@@ -56,7 +56,7 @@
      ]
     "publisherName":string,    
     "publisherId": string      
-    "cards": [ 
+    "stories": [ 
       { 
         "pageId" : string 
         "imageAttribution": string 
@@ -138,7 +138,7 @@ enum DurationUnit {
 ```
   {
     "storyId": string,
-    "cards": [ 
+    "stories": [ 
       { 
         "pageId" : string 
         "imageAttribution": string 
