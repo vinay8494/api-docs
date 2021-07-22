@@ -192,12 +192,12 @@ enum DurationUnit {
   ```
    { 
       "data": { 
-        "count": 25, 
+        "count": integer, 
         "next": null, 
         "previous": null, 
         "results": [ 
           { 
-            "id": "d6552daf-cf2c-4d69-9196-5658e299b8b2", 
+            "id": string, 
             "status": "", 
             "imageUrl": "" 
           } 
