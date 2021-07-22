@@ -105,26 +105,22 @@ enum DurationUnit {
 * **Data Params**  
 ```
   {
-    "articles": [ 
-      { 
-          "title": string
-      },
-      { 
-          "description": string
-      },
-    ]
+    "articles": {
+      "title": string
+      "description": string
   }
 ```
 * **Success Response:** 
 * **Code:** 200  
   **Content:**  `{ 
     "images": [comma separated string]
-  
   }`  
+  OR 
+* **Code:** 200  
+  **Content:**  `{ 
+    "images": []
+  }`    
 * **Error Response:**  
-  * **Code:** 400  
-  **Content:** `{ error : "No Suggested Images Found" }`  
-  OR  
   * **Code:** 401  
   **Content:** `{ error : "You are unauthorized to make this request." }`
   OR  
@@ -171,7 +167,7 @@ enum DurationUnit {
   
   
   
- GET /rest/api/v0/gdp/stories/get_published_stories/?storyId=:storyId&partner=:partnerId&region=:regionId&status=:status
+ GET /rest/api/v0/gdp/stories/published/?storyId=:storyId&partner=:partnerId&region=:regionId&status=:status
 ----
   Gets All the Published Stories.
 * **URL Params**  
