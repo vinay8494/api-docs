@@ -1,6 +1,6 @@
 **POST /rest/api/v0/gdp/stories/make_stories/**
 ----
-  Creates a new Story in Makestory and returns empty response.
+  Creates a new Story through MakeStories API.
 * **URL Params**  
   None
 * **Headers**  
@@ -12,8 +12,7 @@
     "url": string, 
     "title": string, 
     "categories": [comma separated string], 
-    "publisherName": string, 
-    "publisherId": string, 
+    "source": string, 
     "language": string, 
     "summary": string, 
   } 
@@ -24,7 +23,7 @@
 * **Error Response:**  
 
   * **Code:** 401  
-  **Content:** `{ error : "You are unauthorized to make this request." }`
+  **Content:** `{ error : error : "You are unauthorized to make this request." }`
 
 **POST /rest/api/v0/gdp/stories/publish/**
 ----
@@ -80,7 +79,7 @@
 * **Error Response:**  
 
   * **Code:** 401  
-  **Content:** `{ error : "You are unauthorized to make this request." }`
+  **Content:** `{ error : error : "You are unauthorized to make this request." }`
   
   
 Payload Reference :
@@ -126,10 +125,10 @@ enum DurationUnit {
   **Content:** `{ error : "No Suggested Images Found" }`  
   OR  
   * **Code:** 401  
-  **Content:** `{ error : "You are unauthorized to make this request." }`
+  **Content:** `{ error : error : "You are unauthorized to make this request." }`
   OR  
   * **Code:** 500  
-  **Content:** `{ error : "Internal Server Error." }`
+  **Content:** `{ error : error : "Internal Server Error." }`
   
 **POST /rest/api/v0/gdp/stories/cards_story/**
 ----
@@ -167,7 +166,7 @@ enum DurationUnit {
 * **Error Response:**  
 
   * **Code:** 401  
-  **Content:** `{ error : "You are unauthorized to make this request." }`
+  **Content:** `{ error : error : "You are unauthorized to make this request." }`
   
   
   
@@ -193,12 +192,12 @@ enum DurationUnit {
   ```
    { 
       "data": { 
-        "count": integer, 
+        "count": 25, 
         "next": null, 
         "previous": null, 
         "results": [ 
           { 
-            "id": string, 
+            "id": "d6552daf-cf2c-4d69-9196-5658e299b8b2", 
             "status": "", 
             "imageUrl": "" 
           } 
@@ -209,7 +208,7 @@ enum DurationUnit {
 * **Error Response:**  
  
   * **Code:** 401  
-  **Content:** `{ error : "You are unauthorized to make this request." }`
+  **Content:** `{ error : error : "You are unauthorized to make this request." }`
   
   
 
@@ -238,4 +237,4 @@ enum DurationUnit {
   **Content:** `{ error : "No Published Story Exist" }`  
   OR  
   * **Code:** 401  
-  **Content:** `{ error : "You are unauthorized to make this request." }`
+  **Content:** `{ error : error : "You are unauthorized to make this request." }`
