@@ -56,15 +56,14 @@
      ]
     "publisherName":string,    
     "publisherId": string      
-    "cards": [ 
+    "stories": [ 
       { 
         "pageId" : string 
-        "imageUrl": string 
         "imageAttribution": string 
         "isCoverCard": boolean
         "summary": string, 
         "sequenceNumber": integer 
-        "url": string 
+        "videoUrl": string 
         "title": string 
         "cta" : { 
             "text": string, 
@@ -105,26 +104,22 @@ enum DurationUnit {
 * **Data Params**  
 ```
   {
-    "articles": [ 
-      { 
-          "title": string
-      },
-      { 
-          "description": string
-      },
-    ]
+    "article": {
+      "title": string
+      "description": string
   }
 ```
 * **Success Response:** 
 * **Code:** 200  
   **Content:**  `{ 
-    "images": [comma separated string]
-  
+    "images": [comma separated string of image urls]
   }`  
+  OR 
+* **Code:** 200  
+  **Content:**  `{ 
+    "images": []
+  }`    
 * **Error Response:**  
-  * **Code:** 400  
-  **Content:** `{ error : "No Suggested Images Found" }`  
-  OR  
   * **Code:** 401  
   **Content:** `{ error : "You are unauthorized to make this request." }`
   OR  
@@ -143,15 +138,14 @@ enum DurationUnit {
 ```
   {
     "storyId": string,
-    "cards": [ 
+    "stories": [ 
       { 
         "pageId" : string 
-        "imageUrl": string 
         "imageAttribution": string 
         "isCoverCard": boolean 
         "summary": string, 
         "sequenceNumber": integer 
-        "url": string 
+        "videoUrl": string 
         "title": string 
         "cta" : { 
             "text": string, 
@@ -171,7 +165,7 @@ enum DurationUnit {
   
   
   
- GET /rest/api/v0/gdp/stories/get_published_stories/?storyId=:storyId&partner=:partnerId&region=:regionId&status=:status
+ GET /rest/api/v0/gdp/stories/published/?storyId=:storyId&partner=:partnerId&region=:regionId&status=:status
 ----
   Gets All the Published Stories.
 * **URL Params**  
@@ -239,3 +233,14 @@ enum DurationUnit {
   OR  
   * **Code:** 401  
   **Content:** `{ error : "You are unauthorized to make this request." }`
+
+
+ POST Video Upload API
+----
+  To upload the video to Glance storage.
+
+
+ POST Authentication API
+----
+  To authenticate the client.
+ 
