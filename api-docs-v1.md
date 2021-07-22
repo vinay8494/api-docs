@@ -233,3 +233,14 @@ enum DurationUnit {
   OR  
   * **Code:** 401  
   **Content:** `{ error : "You are unauthorized to make this request." }`
+
+
+ POST Video Upload API
+----
+  To upload the video to Glance storage.
+
+
+ POST Authentication API
+----
+  To authenticate the client.
+ 
