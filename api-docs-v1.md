@@ -12,7 +12,8 @@
     "url": string, 
     "title": string, 
     "categories": [comma separated string], 
-    "source": string, 
+    "publisherName": string, 
+    "publisherId": string, 
     "language": string, 
     "summary": string, 
   } 
